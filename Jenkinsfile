@@ -1,16 +1,16 @@
 pipeline
 {
-agentsany
+agents any
 {
 stages{
-stage("build")
+stage('build')
 {
 steps
 {
-echo "building the project"
+echo 'building the project'
 }
 }
-stage("test")
+stage('test')
 {
 steps { echo 'testing the project'}
 }
@@ -18,7 +18,7 @@ stage('deploy')
 {
 steps
 {
-echo "deploying the project"
+echo 'deploying the project'
 }
 }
 }
